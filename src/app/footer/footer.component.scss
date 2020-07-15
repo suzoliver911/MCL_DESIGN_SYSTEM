@@ -1,0 +1,45 @@
+@import '../scss/variables';
+
+footer {
+  height: 70px;
+  padding: 1em;
+  max-width: calc(1060px + 260px + 32px);
+  min-width: 230px;
+  background: #f0f3f7;
+  text-align: center;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+li {
+  margin-right: 2em;
+}
+
+li > a {
+  color: $body-color;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.badge-pill {
+  font-size: 0.8em;
+  border-radius: 2em;
+  padding: 0.25em 0.5em;
+}
+
+.ft-title {
+  font-size: 1.125em;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 930px) {
+  footer {
+    border-top: 1px solid $gray-200;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+
+.top {
+  border-bottom: 1px solid $gray-400;
+}
+
+.tooltips {
+  padding: 3em 1em;
+  border: 1px solid $gray-100;
+  display: flex;
+  flex-wrap: wrap;
+}

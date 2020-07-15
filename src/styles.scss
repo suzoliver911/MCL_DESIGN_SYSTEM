@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@mcl/style-theme/theme/scss/mcl-theme.scss';
+@import '~@progress/kendo-theme-bootstrap/dist/all';
+@import '~highlight.js/styles/github.css';
+@import '~@element/notify/lib/element-notify.css';
+
+$sg-background: #f0f3f7;
+// $nav-text: $gray-700;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: $sg-background !important;
+}
+
+app-root {
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 100%;
+  display: block;
+  overflow: auto;
+}
+
+p {
+  max-width: 50rem;
+  &.intro {
+    font-size: 1.25em;
+    margin-bottom: 3rem;
+  }
+}
+
+.icon-sm {
+  height: 1em;
+  width: 1em;
+}
+
+.input-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+@media (max-width: 930px) {
+  body {
+    background: #fff !important;
+  }
+}

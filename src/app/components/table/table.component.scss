@@ -1,0 +1,29 @@
+@import '../../scss/variables';
+
+table thead th {
+  position: relative;
+}
+.icon-asc,
+.icon-desc {
+  position: absolute;
+  left: -6px;
+  top: 15px;
+  height: 1em;
+  width: 1em;
+  color: $gray-500;
+  display: none;
+}
+
+th.asc > svg.icon-asc {
+  left: -6px;
+  top: 15px;
+  color: $gray-900;
+  display: inline;
+}
+
+th.desc > svg.icon-desc {
+  left: -6px;
+  top: 15px;
+  color: $gray-900;
+  display: inline;
+}

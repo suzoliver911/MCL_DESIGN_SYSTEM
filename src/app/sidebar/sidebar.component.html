@@ -1,0 +1,106 @@
+<aside class="d-flex flex-column">
+  <nav>
+    <ul class="nav-level-one">
+      <li>
+        <button
+          type="button"
+          class="btn btn-link"
+          [ngClass]="{ expanded: !isGettingStartedCollapsed }"
+          (click)="expandGettingStarted()"
+        >
+          <div class="d-flex align-items-center">
+            <svg class="icon-nav">
+              <use xlink:href="#code"></use>
+            </svg>
+            <span>Getting Started</span>
+          </div>
+        </button>
+        <ul class="nav-level-two" [ngbCollapse]="isGettingStartedCollapsed">
+          <li>
+            <a routerLink="getting-started/introduction" routerLinkActive="active" (click)="sendToggleClick()">
+              Introduction
+            </a>
+          </li>
+          <li>
+            <a routerLink="getting-started/colors" routerLinkActive="active" (click)="sendToggleClick()">
+              Colors
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          type="button"
+          class="btn btn-link"
+          [ngClass]="{ expanded: !isComponentsCollapsed }"
+          (click)="expandComponents()"
+        >
+          <div class="d-flex align-items-center">
+            <svg class="icon-nav">
+              <use xlink:href="#layers"></use>
+            </svg>
+            <span>Components</span>
+          </div>
+        </button>
+        <ul class="nav-level-two" [ngbCollapse]="isComponentsCollapsed">
+          <li>
+            <a routerLink="components/alerts" routerLinkActive="active" (click)="sendToggleClick()">
+              Alerts
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/breadcrumb" routerLinkActive="active" (click)="sendToggleClick()">
+              Breadcrumb
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/buttons" routerLinkActive="active" (click)="sendToggleClick()">
+              Buttons
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/card" routerLinkActive="active" (click)="sendToggleClick()">
+              Card
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/collapse" routerLinkActive="active" (click)="sendToggleClick()">
+              Collapse
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="components/forms" routerLinkActive="active" (click)="sendToggleClick()">
+              Forms
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/popovers" routerLinkActive="active" (click)="sendToggleClick()">
+              Popovers
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/table" routerLinkActive="active" (click)="sendToggleClick()">
+              Table
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/tooltips" routerLinkActive="active" (click)="sendToggleClick()">
+              Tooltips
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/kendo-buttons" routerLinkActive="active" (click)="sendToggleClick()">
+              Kendo Buttons
+            </a>
+          </li>
+          <li>
+            <a routerLink="components/kendo-grid" routerLinkActive="active" (click)="sendToggleClick()">
+              Kendo Grid
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>

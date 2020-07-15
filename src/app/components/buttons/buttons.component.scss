@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.card {
+  width: 90%;
+}
+
+.example-btn {
+  header {
+    padding: 1em;
+  }
+  pre {
+    margin: 0;
+  }
+}
+
+.text-sm {
+  font-size: 0.8em;
+}
+.clipboard {
+  background-color: $gray-100;
+}

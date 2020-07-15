@@ -1,0 +1,76 @@
+@import '../scss/variables';
+
+header {
+  padding: 1em;
+  max-width: calc(1060px + 260px + 32px);
+  min-width: 230px;
+  background: theme-color('header');
+}
+input {
+  width: 20rem;
+  border: 1px solid $gray-200;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: rgba(92, 106, 196, 0) 0px 0px 0px 0.2rem inset, rgba(99, 115, 129, 0.2) 0px 0.1rem 0.2rem 0px inset;
+  &:hover,
+  &:focus {
+    border-color: $primary;
+  }
+}
+
+.logo {
+  &-mc-labs {
+    margin: 0 2em;
+    width: 200px;
+    height: 70px;
+    fill: currentColor;
+  }
+}
+
+.search-field-wrapper {
+  position: relative;
+
+  input {
+    padding: 0.25em 0.25em 0.25em 2em;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.5em;
+  height: 100%;
+  top: 0;
+}
+
+.icon-sm-search {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.icon-search-wrapper {
+  display: none;
+  margin-right: 2em;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 930px) {
+  header {
+    border-bottom: 1px solid $gray-200;
+  }
+  .search-field-wrapper {
+    display: none;
+  }
+  .icon-search-wrapper,
+  .nav-toggle {
+    display: flex;
+  }
+  .logo-mc-labs {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+}

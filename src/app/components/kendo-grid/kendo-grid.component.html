@@ -1,0 +1,21 @@
+<div class="p-6">
+  <h1>Grid</h1>
+  <p class="intro">
+    Bootstrap provides some basic styling for tables.
+  </p>
+  <h3>Kendo Grid</h3>
+  <p>Kendo Grid a mapping of objects to table rows with <code>ngFor</code></p>
+
+  <kendo-grid [data]="gridData"  [height]="410" [rowClass]="rowCallback">
+    <kendo-grid-column [headerClass]="{'grid-header': true}" field="ProductID" title="ID" width="40"> </kendo-grid-column>
+    <kendo-grid-column [headerClass]="{'grid-header': true}" field="ProductName" title="Name" width="250"> </kendo-grid-column>
+    <kendo-grid-column [headerClass]="{'grid-header': true}" field="Category.CategoryName" title="Category"> </kendo-grid-column>
+    <kendo-grid-column [headerClass]="{'grid-header': true}" field="UnitPrice" title="Price" width="80"> </kendo-grid-column>
+    <kendo-grid-column [headerClass]="{'grid-header': true}" field="UnitsInStock" title="In stock" width="80"> </kendo-grid-column>
+    <kendo-grid-column [headerClass]="{'grid-header': true}" field="Discontinued" title="Discontinued" width="120">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <input type="checkbox" [checked]="dataItem.Discontinued" disabled />
+      </ng-template>
+    </kendo-grid-column>
+  </kendo-grid>
+</div>

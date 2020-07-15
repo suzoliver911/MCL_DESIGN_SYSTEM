@@ -1,0 +1,156 @@
+@media only screen and (min-width: 640px) {
+  .steps ul {
+    margin: 0;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0px;
+    margin-left: -51px;
+  }
+  ul {
+    margin-left: -40px;
+  }
+  .steps a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  .steps li {
+    position: relative;
+    display: block;
+    background: #f5f5f5;
+    padding-right: 0 !important;
+    text-align: center;
+    color: #aaa;
+    cursor: pointer;
+    padding-left: 0px;
+    float: left;
+    font-weight: 400 !important;
+    height: 42px;
+    line-height: 1;
+    width: 116px;
+    margin: 0;
+    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px !important;
+    padding: 0;
+  }
+  .steps li div {
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+
+  .steps li:first-child {
+    padding-left: 5px;
+  }
+
+  .steps li::after,
+  .steps li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid transparent;
+  }
+  .steps li:before {
+    margin-left: 1px;
+    border-left-color: #d5d5d5;
+  }
+  /* colored arrow to the right */
+  .steps li:after {
+    border-left-color: #f5f5f5;
+  }
+
+  /* Current */
+  .steps li .current {
+    line-height: 1;
+    padding-top: 5px;
+    background: #2f6ecc;
+    color: #fff;
+    height: 40px;
+    padding-left: 18px;
+    border: 0 !important;
+    box-sizing: border-box !important;
+    margin-left: 0;
+  }
+  .steps li .current:before,
+  .steps li .current:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 5;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid transparent;
+  }
+  .steps li .current::before {
+    margin-left: 1px;
+    border-left-color: #2f6ecc;
+  }
+  .steps li .current::after {
+    border-left-color: #2f6ecc;
+  }
+  .breadcrumbicon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .breadcrumbicon {
+    fill: #999;
+    height: 12px;
+    width: 12px;
+    /* float: left; */
+    position: relative;
+    margin-left: 13px;
+  }
+  ul {
+    margin-left: -48px;
+  }
+  .steps ul {
+    margin: 0;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0px;
+    margin-left: -51px;
+  }
+  .steps a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  .steps li {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-left: 0px;
+    float: left;
+    font-weight: 400 !important;
+    height: 42px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px !important;
+    padding: 0;
+  }
+  .steps li div {
+    padding-top: 5px;
+    padding-left: 12px;
+  }
+  .steps li .current {
+    color: #444;
+  }
+  #current {
+    background-color: #e6eef7;
+  }
+}

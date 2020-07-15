@@ -1,0 +1,68 @@
+@import '../scss/variables';
+
+a {
+  color: $gray-700;
+  text-decoration: none;
+}
+.btn.btn-link {
+  color: $gray-700;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+  &.expanded {
+    color: $gray-900;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.logo {
+  &-mc-labs {
+    width: 200px;
+    height: 70px;
+    fill: currentColor;
+  }
+}
+
+.version {
+  font-size: 1.5em;
+  font-family: 'Work Sans', monospace;
+}
+
+li > a {
+  display: inline-block;
+  width: 100%;
+  margin: 0.5em 1em;
+  padding: 0em 0.5em;
+  background-color: transparent;
+  border-left: 3px solid transparent;
+  &.active {
+    color: $primary;
+    border-left: 3px solid $primary;
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.icon-nav {
+  height: 1.5rem;
+  width: 1.5em;
+  margin-right: 1rem;
+}
+
+ul.nav-level-one > li {
+  margin-bottom: 0.25em;
+}

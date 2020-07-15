@@ -1,0 +1,26 @@
+<header class="d-flex justify-content-between align-items-center">
+  <div class="nav-toggle">
+    <input
+      id="hamburger"
+      class="hamburger"
+      type="checkbox"
+      (click)="sendToggleClick()"
+      [checked]="isHamburgerChecked"
+    />
+    <label class="hamburger" for="hamburger">
+      <i></i>
+    </label>
+  </div>
+  <svg class="logo-mc-labs"><use xlink:href="#mc-labs_black"></use></svg>
+  <!-- <div class="search-field-wrapper">
+    <input placeholder="Search" type="search" />
+    <svg class="input-icon search-icon">
+      <use xlink:href="#search"></use>
+    </svg>
+  </div> -->
+  <!-- <div class="icon-search-wrapper">
+    <svg class="icon-sm-search">
+      <use xlink:href="#search"></use>
+    </svg>
+  </div> -->
+</header>

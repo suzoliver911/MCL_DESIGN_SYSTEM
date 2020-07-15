@@ -1,0 +1,81 @@
+<div class="p-4">
+  <h1>Buttons</h1>
+  <p class="intro">
+    Use custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+  </p>
+  <h4>Regular Buttons</h4>
+  <p>This web UI kit includes several predefined button styles, each serving its own semantic purpose.</p>
+  <section class="card">
+    <div class="example example-btn">
+      <header>
+        <button type="button" class="btn btn-primary m-2">Primary</button>
+        <button type="button" class="btn btn-secondary m-2">Secondary</button>
+        <button type="button" class="btn btn-success m-2">Success</button>
+        <button type="button" class="btn btn-danger m-2">Danger</button>
+        <button type="button" class="btn btn-warning m-2">Warning</button>
+        <button type="button" class="btn btn-info m-2">Info</button>
+        <button type="button" class="btn btn-light m-2">Light</button>
+        <button type="button" class="btn btn-dark m-2">Dark</button>
+        <button type="button" class="btn btn-link m-2">Link</button>
+      </header>
+      <div>
+        <div class="clipboard d-flex justify-content-end">
+          <ng-template #tipContent>
+            <div *ngIf="!clicked">
+              {{ tooltipText }}
+            </div>
+            <div *ngIf="clicked">
+              {{ tooltiptextcopied }}
+            </div>
+          </ng-template>
+          <button
+            type="button"
+            class="btn btn-light"
+            ngxClipboard
+            [cbContent]="code"
+            [closeDelay]="500"
+            #t1="ngbTooltip"
+            (cbOnSuccess)="copied($event, t1)"
+            [ngbTooltip]="tipContent"
+            (mouseover)="copyclipboard(t1)"
+            triggers="click"
+          >
+            <svg class="icon-sm"><use xlink:href="#clipboard"></use></svg>
+            <span class="text-sm ml-1">Copy</span>
+          </button>
+        </div>
+
+        <pre><code [highlight]="code" [languages]="['html']" (highlighted)="onHighlight($event)" ></code></pre>
+      </div>
+    </div>
+  </section>
+  <h4 class="mt-4">Outline Buttons</h4>
+  <p>
+    If you need a more subtle button, use the modifier class <code>.btn-outline-*</code>. This removes all the
+    background images and colors on any button.
+  </p>
+  <section class="card">
+    <div class="example example-btn">
+      <header>
+        <button type="button" class="btn btn-outline-primary m-2">Primary</button>
+        <button type="button" class="btn btn-outline-secondary m-2">Secondary</button>
+        <button type="button" class="btn btn-outline-success m-2">Success</button>
+        <button type="button" class="btn btn-outline-danger m-2">Danger</button>
+        <button type="button" class="btn btn-outline-warning m-2">Warning</button>
+        <button type="button" class="btn btn-outline-info m-2">Info</button>
+        <button type="button" class="btn btn-outline-light m-2">Light</button>
+        <button type="button" class="btn btn-outline-dark m-2">Dark</button>
+        <button type="button" class="btn btn-outline-link m-2">Link</button>
+      </header>
+    </div>
+  </section>
+  <div class="mt-5">
+    <!-- Small switch -->
+    <div class="form-group">
+      <span class="switch switch-sm">
+        <input type="checkbox" class="switch" id="switch-sm" />
+        <label for="switch-sm">Small switch</label>
+      </span>
+    </div>
+  </div>
+</div>

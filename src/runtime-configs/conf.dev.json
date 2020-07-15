@@ -1,0 +1,5 @@
+{
+  "env": "DEV",
+  "debugHttp": "true",
+  "appBaseUrl": "https://mcl-dev-designui.mayo.edu"
+}

@@ -1,0 +1,27 @@
+.color-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.color-stack {
+  list-style: none;
+  padding: 0;
+  flex-basis: 46%;
+  box-sizing: border-box;
+  margin: 0 0 3.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-stack > li {
+  padding: 0.75rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+  transition: all 246ms ease;
+}
